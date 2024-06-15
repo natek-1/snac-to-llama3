@@ -1,4 +1,2 @@
 datasets
-soundfile
-librosa
 huggingface_hub
