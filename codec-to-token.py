@@ -50,8 +50,10 @@ class Vocabulary:
 if __name__ == "__main__":
     test_dir = [f"dataset/default/partial-train/000{i}.parquet" for i in range(10)]
     vocab = Vocabulary()
-
+    # buidling the vocabulary
     vocab.build_vocabulary(test_dir)
+
+    # saving it to file
     vocab.save("snac-to-llama.json")
         
         
